@@ -19,7 +19,7 @@ const byte interruptPin2 = 2;
 int val = 0;
 
 void setup() {
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3C (initializing the display)
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // Pode ser 3D  initialize with the I2C addr 0x3C (initializing the display)
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);
   pinMode(interruptPin3, INPUT_PULLUP);
